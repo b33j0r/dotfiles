@@ -1,0 +1,15 @@
+cask_args appdir: "/Applications"
+
+tap "homebrew/core"
+tap "homebrew/versions"
+tap "homebrew/bundle"
+
+brew "git"
+brew "readline"
+brew "xz"
+brew "openssl"
+brew "libxml2"
+brew "libxslt"
+brew "libyaml"
+brew "libzip"
+brew "zlib"

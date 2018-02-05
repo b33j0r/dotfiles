@@ -5,13 +5,7 @@ echo "BOOTSTRAP tmux"
 BOOTSTRAP_HOME="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 pushd ${BOOTSTRAP_HOME}
 
-brew install tmux
-brew install reattach-to-user-namespace
-
-
-# Facebook PathPicker
-
-brew install fpp
+brew bundle
 
 
 # .tmux
@@ -30,6 +24,24 @@ pushd $HOME/.tmux
 git pull
 popd
 
+
+# tmuxinator
+
+gem install tmuxinator
+
+mkdir -p $HOME/.config/fish/completions/
+mkdir -p $HOME/.config/tmuxinator/
+
+# pushd $HOME/.config/fish/completions
+# wget https://raw.githubusercontent.com/tmuxinator/tmuxinator/master/completion/tmuxinator.fish
+# popd
+
+ln -s -f $BOOTSTRAP_HOME/.config/fish/completions/tmuxinator.fish $HOME/.config/fish/completions/tmuxinator.fish
+
+ln -s -f $BOOTSTRAP_HOME/.config/tmuxinator/* $HOME/.config/tmuxinator/
+
+# Test
+tmuxinator doctor
 
 # Link conf files
 

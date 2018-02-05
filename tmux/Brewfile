@@ -1,0 +1,8 @@
+tap "homebrew/core"
+tap "homebrew/versions"
+tap "homebrew/bundle"
+
+brew "ruby"
+brew "tmux"
+brew "reattach-to-user-namespace"
+brew "fpp"
