@@ -276,3 +276,10 @@ tmux_conf_theme_left_separator_main=''
 tmux_conf_theme_left_separator_sub=''
 tmux_conf_theme_right_separator_main=''
 tmux_conf_theme_right_separator_sub=''
+
+# split current window horizontally
+bind - split-window -v
+# split current window vertically
+bind | split-window -h
+
+
