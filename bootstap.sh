@@ -20,7 +20,7 @@ echo "BOOTSTRAP uncomment stuff if nothing is happening!"
 # source ${DOTFILES_HOME}/node/bootstrap.sh
 # source ${DOTFILES_HOME}/misc/bootstrap.sh
 
-if [ ! -e "${DOTFILES_HOME}/private/bootstrap.sh" ]; then
+if [ -e "${DOTFILES_HOME}/private/bootstrap.sh" ]; then
   source ${DOTFILES_HOME}/private/bootstrap.sh
 fi
 
