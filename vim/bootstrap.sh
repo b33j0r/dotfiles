@@ -17,7 +17,7 @@ else
   echo "Vimified already installed!"
 fi
 
-mv ${HOME}/.vim/local.vimrc ${HOME}/.vim/local.vimrc.backup
-ln -s -f ${BOOTSTRAP_HOME}/.vim/local.vimrc ${HOME}/.vim/local.vimrc
+ln -s -f ${BOOTSTRAP_HOME}/local.vimrc ${HOME}/.vim/local.vimrc
+ln -s -f ${BOOTSTRAP_HOME}/after.vimrc ${HOME}/.vim/after.vimrc
 
 popd
