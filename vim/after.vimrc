@@ -1,6 +1,6 @@
 set norelativenumber
 set number
-set pastetoggle=<Enter>
+set pastetoggle=<F3>
 
 let NERDTreeShowHidden=1
 
