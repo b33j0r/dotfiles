@@ -36,9 +36,9 @@ mkdir -p $HOME/.config/tmuxinator/
 # wget https://raw.githubusercontent.com/tmuxinator/tmuxinator/master/completion/tmuxinator.fish
 # popd
 
-ln -s -f $BOOTSTRAP_HOME/.config/fish/completions/tmuxinator.fish $HOME/.config/fish/completions/tmuxinator.fish
+ln -s -f $BOOTSTRAP_HOME/fish/completions/tmuxinator.fish $HOME/.config/fish/completions/tmuxinator.fish
 
-ln -s -f $BOOTSTRAP_HOME/.config/tmuxinator/* $HOME/.config/tmuxinator/
+ln -s -f $BOOTSTRAP_HOME/tmuxinator/* $HOME/.config/tmuxinator/
 
 # Test
 tmuxinator doctor
@@ -46,6 +46,6 @@ tmuxinator doctor
 # Link conf files
 
 ln -s -f $HOME/.tmux/.tmux.conf $HOME/.tmux.conf
-ln -s -f ${BOOTSTRAP_HOME}/.tmux.conf.local $HOME/.tmux.conf.local
+ln -s -f ${BOOTSTRAP_HOME}/tmux.conf.local $HOME/.tmux.conf.local
 
 popd
