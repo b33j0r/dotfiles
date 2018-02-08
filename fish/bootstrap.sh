@@ -23,10 +23,10 @@ else
   echo "Oh My Fish already installed!"
 fi
 
-ln -s -f ${BOOTSTRAP_HOME}/.config/fish/config.fish ${HOME}/.config/fish/config.fish
+ln -s -f ${BOOTSTRAP_HOME}/config.fish ${HOME}/.config/fish/config.fish
 # ln -s -f ${BOOTSTRAP_HOME}/.config/fish/completions/* ${HOME}/.config/fish/completions/
-ln -s -f ${BOOTSTRAP_HOME}/.config/fish/functions/* ${HOME}/.config/fish/functions/
-ln -s -f ${BOOTSTRAP_HOME}/.config/fish/conf.d/* ${HOME}/.config/fish/conf.d/
+ln -s -f ${BOOTSTRAP_HOME}/functions/* ${HOME}/.config/fish/functions/
+ln -s -f ${BOOTSTRAP_HOME}/conf.d/* ${HOME}/.config/fish/conf.d/
 
 
 popd
