@@ -1,0 +1,32 @@
+# ~/.tmuxinator/coinbit.yml
+
+name: coinbit
+root: ~/Projects/coinbit
+
+windows:
+   - tmuxinator: vi ~/.config/tmuxinator/coinbit.yml
+   - docker-compose:
+       layout: main-horizontal
+       panes:
+         - log:
+           - docker-compose up -d
+           - docker-compose logs -f
+         - fish:
+           - clear
+   - webpack-dev-server:
+       root: ~/Projects/coinbit/src/coinbit_web
+       layout: main-horizontal
+       panes:
+         - server:
+           - npm run start
+         - fish:
+           - clear
+
+ #- editor:
+      #layout: main-vertical
+      #panes:
+        #- vim
+        #- guard
+  #- server: bundle exec rails s
+  #- logs: tail -f log/development.log
+
