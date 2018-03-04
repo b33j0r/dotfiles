@@ -1,0 +1,24 @@
+# ~/.config/tmuxinator/nomcoins.yml
+
+name: nomcoins
+root: ~/Projects/nomcoins
+
+windows:
+   - tmuxinator: vi ~/.config/tmuxinator/nomcoins.yml
+   - vim:
+       root: ~/Projects/nomcoins
+       layout: main-horizontal
+       panes:
+         - server:
+           - vim ~/Projects
+         - fish:
+           - clear
+
+ #- editor:
+      #layout: main-vertical
+      #panes:
+        #- vim
+        #- guard
+  #- server: bundle exec rails s
+  #- logs: tail -f log/development.log
+
