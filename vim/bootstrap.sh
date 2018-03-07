@@ -8,6 +8,10 @@ pushd ${BOOTSTRAP_HOME}
 rm -rf $HOME/vimified $HOME/.vim $HOME/.vimrc $HOME/.config/vimified
 
 brew install vim
+brew upgrade vim
+
+brew install neovim
+brew upgrade neovim
 
 if [ ! -e "$HOME/vimified" ]; then
   echo "Installing vimified"

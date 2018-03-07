@@ -25,7 +25,7 @@ brew update
 
 # Install essentials
 echo "Running brew bundle"
-brew bundle >> /dev/null
+brew bundle
 
 
 popd

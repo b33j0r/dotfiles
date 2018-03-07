@@ -27,8 +27,7 @@ pyenv install -s $(pyenv install --list | grep -v - | grep -v 3 | tail -1)
 pyenv install -s $(pyenv install --list | grep -v - | grep -v a | grep -v b | tail -1)
 
 # Install latest 3.x.y (INCLUDING alphas and betas)
-pyenv install -s $(pyenv install --list | grep -v - | tail -1)
+# pyenv install -s $(pyenv install --list | grep -v - | tail -1)
 
-# NOTE: pyenv doesn't always source alphas, but... defensive coding
 
 popd

@@ -17,15 +17,12 @@ brew "sqlite"
 brew "unixodbc"
 
 cask "caskroom/fonts/font-source-code-pro"
+cask "caskroom/fonts/font-hack-nerd-font"
 cask "iterm2"
 
 cask "virtualbox"
 cask "vagrant"
 
-cask "little-snitch"
-cask "micro-snitch"
-
-cask "dash3"
 cask "vlc"
 cask "ccleaner"
 
@@ -34,6 +31,10 @@ cask "textmate"
 # Paid
 # cask "ngrok"
 # cask "bartender"
+cask "little-snitch"
+# cask "micro-snitch"
+
+# cask "dash3"
 
 
 # App Store

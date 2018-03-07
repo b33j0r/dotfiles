@@ -11,7 +11,8 @@ brew bundle
 # .tmux
 
 brew tap caskroom/fonts
-brew cask install font-source-code-pro >> /dev/null 2>&1
+brew cask install font-source-code-pro
+brew cask install font-hack-nerd-font
 
 if [ ! -e "$HOME/.tmux" ]; then
   echo "Installing .tmux"
