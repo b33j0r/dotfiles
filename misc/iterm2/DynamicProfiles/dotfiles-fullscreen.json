@@ -2,9 +2,10 @@
   "Profiles": [
     {
       "Name": "dotfiles-fullscreen",
+      "Description" : "b33j0r dotfiles (fullscreen)",
+      "Shortcut": "N",
       "Window Type": 1,
       "Prevent Opening in a Tab": true,
-      "Description" : "b33j0r dotfiles (fullscreen)",
       "Guid" : "4A44A8BC-9562-477E-B459-314793700D64",
       "Dynamic Profile Parent Name": "dotfiles",
       "Normal Font" : "SourceCodePro-Medium 17",
