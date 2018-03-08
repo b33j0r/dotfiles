@@ -2,6 +2,7 @@
   "Profiles": [
     {
       "Name": "dotfiles",
+      "Window Type": 0,
       "Description" : "b33j0r dotfiles",
       "Guid" : "4A44A8BC-9562-477E-B459-314793700D63",
       "Dynamic Profile Parent Name": "Default",

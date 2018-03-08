@@ -82,6 +82,8 @@ filetype plugin indent on
 set number
 syntax on
 
+autocmd BufWinEnter * silent! :%foldopen!
+
 colorscheme lucius
 LuciusBlack
 
