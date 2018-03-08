@@ -39,6 +39,8 @@ set guioptions-=r
 set guioptions-=L
 " Keep NERDTree window fixed between multiple toggles
 set winfixwidth
+nmap <tab> :NERDTreeToggle<cr>
+
 
 Plug 'scrooloose/nerdcommenter'
 nmap <leader># :call NERDComment(0, "invert")<cr>
@@ -83,8 +85,6 @@ syntax on
 colorscheme lucius
 LuciusBlack
 
-highlight clear SignColumn
-
 
 "
 " MAPPINGS
@@ -97,3 +97,55 @@ noremap <up> <nop>
 noremap <down> <nop>
 noremap <right> <nop>
 
+
+" Navigation & UI {{{
+
+" more natural movement with wrap on
+nnoremap j gj
+nnoremap k gk
+vnoremap j gj
+vnoremap k gk
+
+" Easy splitted window navigation
+noremap <C-h>  <C-w>h
+noremap <C-j>  <C-w>j
+noremap <C-k>  <C-w>k
+noremap <C-l>  <C-w>l
+
+" Easy buffer navigation
+noremap <leader>bp :bprevious<cr>
+noremap <leader>bn :bnext<cr>
+
+" Splits ,v and ,h to open new splits (vertical and horizontal)
+nnoremap <leader>v <C-w>v<C-w>l
+nnoremap <leader>h <C-w>s<C-w>j
+
+" Reselect visual block after indent/outdent
+vnoremap < <gv
+vnoremap > >gv
+
+" Bubbling lines
+nmap <C-Up> [e
+nmap <C-Down> ]e
+vmap <C-Up> [egv
+vmap <C-Down> ]egv
+
+" }}}
+
+" . folding {{{
+
+set foldlevelstart=0
+set foldmethod=syntax
+
+" Space to toggle folds.
+nnoremap <space> za
+vnoremap <space> za
+
+" Make zO recursively open whatever top level fold we're in, no matter where the
+" cursor happens to be.
+nnoremap zO zCzO
+
+" Use ,z to "focus" the current fold.
+nnoremap <leader>z zMzvzz
+
+" }}}

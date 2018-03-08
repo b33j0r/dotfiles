@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-set -x
 echo "BOOTSTRAP nvim"
 
 BOOTSTRAP_HOME="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
