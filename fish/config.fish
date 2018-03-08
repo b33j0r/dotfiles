@@ -2,12 +2,16 @@ set -gx PATH $HOME/bin $HOME/.pyenv/bin $HOME/.pyenv/shims /usr/local/bin /usr/l
 set -gx PYENV_ROOT $HOME/.pyenv
 set -gx EDITOR vim
 
-## this [indirectly, probably upstream] breaks ssh ProxyJump/ProxyCommand
-set -gx SHELL /usr/local/bin/fish
+set -gx PYTHON2_VERSION (pyenv versions | grep '^\s*2' | tail -1 | tr -d '[:space:]')
+set -gx PYTHON3_VERSION (pyenv versions | grep '^\s*3' | tail -1 | tr -d '[:space:]')
 
-## this last part was suspect after I learned of the nature of the problem,
-## but turns out to not matter. can be commented, deleted, unguarded...
-## no effect on any of the behaviors described in this issue
+set -gx PYTHON2_BIN_DIR $PYENV_ROOT/versions/$PYTHON2_VERSION/bin
+set -gx PYTHON3_BIN_DIR $PYENV_ROOT/versions/$PYTHON3_VERSION/bin
+
+set -gx PYTHON2_BIN $PYTHON2_BIN_DIR/python 
+set -gx PYTHON3_BIN $PYTHON3_BIN_DIR/python
+
+set -gx SHELL /usr/local/bin/fish
 
 if status --is-interactive
 

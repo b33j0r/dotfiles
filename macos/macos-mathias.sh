@@ -186,6 +186,12 @@ defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 # defaults write NSGlobalDomain KeyRepeat -int 5
 # defaults write NSGlobalDomain InitialKeyRepeat -int 10
 
+echo " Automatically illuminate built-in MacBook keyboard in low light"
+defaults write com.apple.BezelServices kDim -bool true
+
+echo " Turn off keyboard illumination when computer is not used for 5 minutes"
+defaults write com.apple.BezelServices kDimTime -int 300
+
 # Set language and text formats
 # Note: if you’re in the US, replace `EUR` with `USD`, `Centimeters` with
 # `Inches`, `en_GB` with `en_US`, and `true` with `false`.
