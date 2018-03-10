@@ -1,0 +1,3 @@
+auto-reload      yes
+max-items        100
+browser          open -a "Google Chrome" %u
