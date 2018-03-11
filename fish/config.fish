@@ -19,3 +19,6 @@ if status --is-interactive
   test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
 
 end
+
+bind \eb 'prevd-or-backward-word'
+bind \ef 'nextd-or-forward-word'
