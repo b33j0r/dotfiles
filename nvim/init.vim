@@ -33,6 +33,8 @@ Plug 'vim-scripts/python_match.vim'
 Plug 'davidhalter/jedi-vim'
 Plug 'jmcantrell/vim-virtualenv'
 
+Plug 'avakhov/vim-yaml'
+
 Plug 'scrooloose/nerdtree'
 " Disable the scrollbars (NERDTree)
 set guioptions-=r
