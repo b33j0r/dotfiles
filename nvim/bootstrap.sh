@@ -10,8 +10,8 @@ mkdir -p $HOME/.config/nvim
 
 # pyenv must have already been installed
 
-PYENV_VERSION_2="$(pyenv versions | grep '^\s*2' | tail -1 | tr -d '[:space:]')"
-PYENV_VERSION_3="$(pyenv versions | grep '^\s*3' | tail -1 | tr -d '[:space:]')"
+PYENV_VERSION_2="$(pyenv versions | grep -E "^\*?\s*2\.\d+\.\d+\b" | cut -c 3- |  tail -1 | tr -d '[:space:]')"
+PYENV_VERSION_3="$(pyenv versions | grep -E "^\*?\s*3\.\d+\.\d+\b" | cut -c 3- |  tail -1 | tr -d '[:space:]')"
 
 PYENV_VERSIONS_DIR="$HOME/.pyenv/versions"
 
