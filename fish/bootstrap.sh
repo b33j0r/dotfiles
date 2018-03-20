@@ -12,7 +12,7 @@ mkdir -p ${HOME}/.config/fish/completions
 mkdir -p ${HOME}/.config/fish/conf.d
 mkdir -p ${HOME}/.config/fish/functions
 
-brew install fish
+# brew install fish
 
 ln -s -f ${BOOTSTRAP_HOME}/config.fish ${HOME}/.config/fish/config.fish
 ln -s -f ${BOOTSTRAP_HOME}/interactive.fish ${HOME}/.config/fish/interactive.fish
