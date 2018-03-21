@@ -6,6 +6,8 @@ BOOTSTRAP_HOME="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 pushd ${BOOTSTRAP_HOME}
 
 mkdir -p ${HOME}/bin
+mkdir -p $HOME/.bin
+mkdir -p $HOME/.cargo/bin
 
 mkdir -p ${HOME}/.config/fish
 mkdir -p ${HOME}/.config/fish/completions
