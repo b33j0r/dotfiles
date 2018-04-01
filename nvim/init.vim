@@ -4,6 +4,9 @@
 
 set nocompatible
 
+"" TODO: for MD, txt, etc?
+" set wrap linebreak nolist
+
 filetype on
 filetype off
 
@@ -23,6 +26,11 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'junegunn/vim-easy-align'
 Plug 'vim-syntastic/syntastic'
 Plug 'vimlab/split-term.vim'
+Plug 'rhysd/vim-gfm-syntax'
+let g:markdown_fenced_languages = ['cpp', 'ruby', 'json', 'python', 'rust']
+let g:gfm_syntax_emoji_conceal=1
+Plug 'JamshedVesuna/vim-markdown-preview'
+let vim_markdown_preview_github=1
 
 "
 " Polyglot
@@ -43,6 +51,7 @@ let g:python3_host_prog = $PYTHON3_BIN
 " Rust
 "
 Plug 'rust-lang/rust.vim'
+let g:autofmt_autosave = 1
 Plug 'racer-rust/vim-racer'
 set hidden
 let g:racer_cmd = $RACER_BIN
