@@ -1,1 +1,1 @@
-# dotfiles-private
+# dotfiles
