@@ -25,4 +25,6 @@ fi
 
 cargo install racer
 
+rustup completions fish > ~/.config/fish/completions/rustup.fish
+
 popd
