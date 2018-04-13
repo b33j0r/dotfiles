@@ -4,4 +4,5 @@ tap "homebrew/core"
 tap "homebrew/versions"
 tap "homebrew/bundle"
 
-brew "rust"
+## Using rustup instead
+# brew "rust"

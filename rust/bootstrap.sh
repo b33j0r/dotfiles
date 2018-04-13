@@ -5,26 +5,26 @@ echo "BOOTSTRAP rust"
 BOOTSTRAP_HOME="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 pushd ${BOOTSTRAP_HOME}
 
+## Using rustup instead
 # brew bundle
 
+curl https://sh.rustup.rs -sSf | sh -s -- -y
+rustup update
 
-SRC_PREFIX="$HOME/.src"
-RUST_VERSION="$(rustc --version | cut -c 7-)"
-RUST_SRC_PATH="$SRC_PREFIX/rust-${RUST_VERSION}"
 
-mkdir -p $SRC_PREFIX
-
-if [ ! -e "$RUST_SRC_PATH" ]; then
-  echo "Cloning rust source code from github"
-
-  git clone -b "${RUST_VERSION}" --single-branch --depth 1 https://github.com/rust-lang/rust.git "$RUST_SRC_PATH"
-  ln -s -f $RUST_SRC_PATH "$SRC_PREFIX/rust"
-else
-  echo "Rust source already cloned for version ${RUST_VERSION}"
-fi
-
-cargo install racer
-
+## Install fish completions
 rustup completions fish > ~/.config/fish/completions/rustup.fish
+
+## Use nightly as default
+rustup install nightly
+rustup default nightly
+
+## Install rust language server
+rustup component add rls-preview rust-analysis rust-src
+rustup component add rustfmt-preview
+
+## Install racer
+# cargo uninstall racer
+cargo install racer
 
 popd
