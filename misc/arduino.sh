@@ -24,9 +24,14 @@ pushd ${ARDUINO_HOME}/build
 
 echo "ant clean"
 ant clean
+
 echo "ant build"
 ant build
+
 echo "ant dist"
 ant dist
+
+rm -rf $HOME/Applications/Arduino.app
+cp -r macosx/work/Arduino.app $HOME/Applications/Arduino.app
 
 popd
