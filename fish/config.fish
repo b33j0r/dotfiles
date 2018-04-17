@@ -1,4 +1,7 @@
-set -gx PATH $HOME/.bin $HOME/bin $HOME/.pyenv/bin $HOME/.pyenv/shims $HOME/.cargo/bin /usr/local/bin /usr/local/sbin /usr/bin /bin /usr/sbin /sbin
+set -gx JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home
+set -gx JAVA_PATH $JAVA_HOME/bin
+
+set -gx PATH $HOME/.bin $HOME/bin $HOME/.pyenv/bin $HOME/.pyenv/shims $HOME/.cargo/bin /usr/local/bin /usr/local/sbin $JAVA_PATH /usr/bin /bin /usr/sbin /sbin
 set -gx PYENV_ROOT $HOME/.pyenv
 set -gx EDITOR nvim
 

@@ -25,5 +25,7 @@ fi
 
 source ${DOTFILES_HOME}/macos/bootstrap.sh
 
+brew cleanup
+
 # echo "Displaying config tree:"
 # tree -a ~/.config

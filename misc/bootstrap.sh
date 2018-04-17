@@ -29,8 +29,20 @@ defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 ### Newsboat
 ###
 
-mkdir -p "${HOME}/.newsboat"
-ln -s -f "${BOOTSTRAP_HOME}/newsboat/config" "${HOME}/.newsboat/config"
-ln -s -f "${BOOTSTRAP_HOME}/newsboat/urls" "${HOME}/.newsboat/urls"
+# mkdir -p "${HOME}/.newsboat"
+# ln -s -f "${BOOTSTRAP_HOME}/newsboat/config" "${HOME}/.newsboat/config"
+# ln -s -f "${BOOTSTRAP_HOME}/newsboat/urls" "${HOME}/.newsboat/urls"
+
+
+###
+### Arduino
+###
+
+${BOOTSTRAP_HOME}/arduino.sh
+
+###
+### Custom Scripts
+###
+ln -s -f "${BOOTSTRAP_HOME}/prettyjson.py" "${HOME}/.bin/prettyjson"
 
 popd

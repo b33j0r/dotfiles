@@ -4,5 +4,5 @@ tap "homebrew/core"
 tap "homebrew/versions"
 tap "homebrew/bundle"
 
-brew "newsboat"
+# brew "newsboat"
 brew "ntopng"
