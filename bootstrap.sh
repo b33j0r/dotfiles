@@ -12,7 +12,7 @@ source ${DOTFILES_HOME}/brew/bootstrap.sh
 source ${DOTFILES_HOME}/common/bootstrap.sh
 source ${DOTFILES_HOME}/fish/bootstrap.sh
 source ${DOTFILES_HOME}/tmux/bootstrap.sh
-source ${DOTFILES_HOME}/vim/bootstrap.sh
+# source ${DOTFILES_HOME}/vim/bootstrap.sh
 source ${DOTFILES_HOME}/python/bootstrap.sh
 source ${DOTFILES_HOME}/nvim/bootstrap.sh
 # source ${DOTFILES_HOME}/node/bootstrap.sh
@@ -23,9 +23,7 @@ if [ -e "${DOTFILES_HOME}/private/bootstrap.sh" ]; then
   source ${DOTFILES_HOME}/private/bootstrap.sh
 fi
 
-source ${DOTFILES_HOME}/macos/bootstrap.sh
+# source ${DOTFILES_HOME}/macos/bootstrap.sh
 
 brew cleanup
 
-# echo "Displaying config tree:"
-# tree -a ~/.config

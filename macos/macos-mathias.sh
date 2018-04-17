@@ -148,6 +148,9 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 # # …and make sure it can’t be rewritten
 # sudo chflags uchg /private/var/vm/sleepimage
 
+# Re-enable hibernation
+# sudo pmset -a hibernatemode 1
+
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
 ###############################################################################
