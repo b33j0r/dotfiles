@@ -6,3 +6,6 @@ tap "homebrew/bundle"
 
 # brew "newsboat"
 brew "ntopng"
+
+brew transmission
+cask transmission
