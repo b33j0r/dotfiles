@@ -33,4 +33,6 @@ EOF
 rm -rf $HOME/Applications/Arduino.app
 cp -r macosx/work/Arduino.app $HOME/Applications/Arduino.app
 
+# No driver needed, you just have to use a good cable. Crazy.
+
 popd
