@@ -18,7 +18,6 @@ brew "unixodbc"
 
 cask "caskroom/fonts/font-source-code-pro"
 cask "caskroom/fonts/font-hack-nerd-font"
-cask "iterm2"
 
 cask "virtualbox"
 cask "vagrant"

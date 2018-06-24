@@ -1,0 +1,12 @@
+cask_args appdir: "/Applications"
+
+tap "homebrew/core"
+tap "homebrew/versions"
+tap "homebrew/bundle"
+tap "caskroom/fonts"
+tap "caskroom/cask"
+
+cask "caskroom/fonts/font-source-code-pro"
+cask "caskroom/fonts/font-hack-nerd-font"
+
+cask "iterm2"
