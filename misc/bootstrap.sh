@@ -26,15 +26,6 @@ defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 
 
 ###
-### Newsboat
-###
-
-# mkdir -p "${HOME}/.newsboat"
-# ln -s -f "${BOOTSTRAP_HOME}/newsboat/config" "${HOME}/.newsboat/config"
-# ln -s -f "${BOOTSTRAP_HOME}/newsboat/urls" "${HOME}/.newsboat/urls"
-
-
-###
 ### Arduino
 ###
 
