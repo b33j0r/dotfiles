@@ -6,6 +6,7 @@ BOOTSTRAP_HOME="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 pushd ${BOOTSTRAP_HOME}
 
 brew install node
+brew upgrade node
 
 # function install_package_if_needed() {
 #     local p=${1:-Package required}
@@ -15,6 +16,7 @@ brew install node
 #     [ "$i" == "$v" ] || npm "$@" install "$p@$v"
 # }
 
+npm install -g npm
 npm install -g webpack webpack-dev-server less raw-loader express
 
 
