@@ -16,6 +16,8 @@ brew "wget"
 brew "sqlite"
 brew "unixodbc"
 
+brew "youtube-dl"
+
 cask "caskroom/fonts/font-source-code-pro"
 cask "caskroom/fonts/font-hack-nerd-font"
 
@@ -29,9 +31,9 @@ cask "textmate"
 
 # Paid
 # cask "ngrok"
-# cask "bartender"
+cask "bartender"
 cask "little-snitch"
-# cask "micro-snitch"
+cask "micro-snitch"
 
 # cask "dash3"
 

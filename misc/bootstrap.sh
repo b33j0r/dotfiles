@@ -9,9 +9,12 @@ pushd ${BOOTSTRAP_HOME}
 brew bundle
 
 
-${BOOTSTRAP_HOME}/mongodb/bootstrap.sh
+${BOOTSTRAP_HOME}/quicksilver/bootstrap.sh
 ${BOOTSTRAP_HOME}/iterm2/bootstrap.sh
+
 ${BOOTSTRAP_HOME}/arduino.sh
+
+# ${BOOTSTRAP_HOME}/mongodb/bootstrap.sh
 
 
 ###
