@@ -6,5 +6,4 @@ tap "homebrew/bundle"
 
 brew "ntopng"
 
-brew transmission
-cask transmission
+cask "transmission"
