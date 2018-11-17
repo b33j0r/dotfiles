@@ -22,10 +22,16 @@ PATH=$HOME/.pyenv/bin:$HOME/.pyenv/shims:$PATH
 export CFLAGS="-I$(xcrun --show-sdk-path)/usr/include"
 
 # Install latest 2.x.y
-pyenv install -s $(pyenv install --list | grep -Eo "^\*?\s*2\.\d+\.\d+\b" | cut -c 3- | tail -1)
+LATEST_PYTHON2="$(pyenv install --list | grep -Eo "^\*?\s*2\.\d+\.\d+\b" | cut -c 3- | tail -1)"
+pyenv install -s $LATEST_PYTHON2
+pyenv global $LATEST_PYTHON2
+pip install -U setuptools pip
 
 # Install latest 3.x.y (excluding alphas and betas)
-pyenv install -s $(pyenv install --list | grep -Eo "^\*?\s*3\.\d+\.\d+\b" | cut -c 3- | tail -1)
+LATEST_PYTHON3="$(pyenv install --list | grep -Eo "^\*?\s*3\.\d+\.\d+\b" | cut -c 3- | tail -1)"
+pyenv install -s $LATEST_PYTHON3
+pyenv global $LATEST_PYTHON3
+pip install -U setuptools pip
 
 
 popd
