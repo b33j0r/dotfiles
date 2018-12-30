@@ -3,7 +3,22 @@ cask_args appdir: "/Applications"
 tap "homebrew/core"
 tap "homebrew/versions"
 tap "homebrew/bundle"
+tap "caskroom/cask"
+tap "neovim/neovim"
+tap "sanelson/freecad"
 
-brew "ntopng"
+# brew "ntopng"
 
 cask "transmission"
+
+cask "vlc"
+cask "ccleaner"
+
+# Paid
+cask "bartender"
+cask "little-snitch"
+cask "micro-snitch"
+
+# App Store
+# cask "the-unarchiver"
+# cask "daisydisk"

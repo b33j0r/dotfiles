@@ -12,7 +12,7 @@ brew bundle
 ${BOOTSTRAP_HOME}/quicksilver/bootstrap.sh
 ${BOOTSTRAP_HOME}/iterm2/bootstrap.sh
 
-${BOOTSTRAP_HOME}/arduino.sh
+# ${BOOTSTRAP_HOME}/arduino.sh
 
 # ${BOOTSTRAP_HOME}/mongodb/bootstrap.sh
 

@@ -70,15 +70,3 @@ cask "textmate"
 cask "docker"
 cask "virtualbox"
 cask "vagrant"
-
-cask "vlc"
-cask "ccleaner"
-
-# Paid
-cask "bartender"
-cask "little-snitch"
-cask "micro-snitch"
-
-# App Store
-# cask "the-unarchiver"
-# cask "daisydisk"
