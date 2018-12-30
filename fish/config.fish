@@ -32,4 +32,3 @@ if status --is-interactive
   source $HOME/.config/fish/keybindings.fish
   source $HOME/.config/fish/abbreviations.fish
 end
-
