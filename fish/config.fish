@@ -2,10 +2,12 @@ if status --is-interactive
   source $HOME/.config/fish/interactive.fish
 end
 
-set -gx JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home
+set -gx JAVA_JVMS_HOME /Library/Java/JavaVirtualMachines
+set -gx JAVA_JDK_VERSION (ls "$JAVA_JVMS_HOME" | sort | tail -1)
+set -gx JAVA_HOME /Library/Java/JavaVirtualMachines/$JAVA_JDK_VERSION/Contents/Home
 set -gx JAVA_PATH $JAVA_HOME/bin
 
-set -gx PATH $HOME/.bin $HOME/bin /Library/Frameworks/Mono.framework/Versions/5.4.1/bin $HOME/.pyenv/bin $HOME/.pyenv/shims $HOME/.cargo/bin /usr/local/bin /usr/local/sbin $JAVA_PATH /usr/bin /bin /usr/sbin /sbin
+set -gx PATH $HOME/.bin $HOME/bin /Library/Frameworks/Mono.framework/Versions/Current/bin $HOME/.pyenv/bin $HOME/.pyenv/shims $HOME/.cargo/bin /usr/local/bin /usr/local/sbin $JAVA_PATH /usr/bin /bin /usr/sbin /sbin
 set -gx PYENV_ROOT $HOME/.pyenv
 set -gx EDITOR nvim
 

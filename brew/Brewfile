@@ -5,42 +5,80 @@ tap "homebrew/versions"
 tap "homebrew/bundle"
 tap "caskroom/fonts"
 tap "caskroom/cask"
+tap "neovim/neovim"
+tap "sanelson/freecad"
 
-brew "curl"
+brew "autoconf"
+brew "automake"
+brew "boost"
+brew "freetype"
+brew "fontconfig"
+brew "gettext", link: true
+brew "libffi"
+brew "glib"
+brew "pixman"
+brew "mpfr"
+brew "cgal"
+brew "eigen"
+brew "libtool"
+brew "openssl", link: true
+brew "freetds", args: ["with-unixodbc"]
+brew "icu4c"
+brew "harfbuzz"
+brew "jpeg"
+brew "imagemagick"
+brew "libevent"
+brew "libssh2"
+brew "libxml2"
+brew "libxslt"
+brew "libyaml"
+brew "libzip"
+brew "opencsg"
+brew "sqlite"
+brew "qt", link: true
+brew "qscintilla2"
+brew "unixodbc"
+brew "wget"
+brew "zlib"
+
+brew "ruby"
+brew "node"
+brew "go"
 brew "git"
 brew "rsync"
-brew "tree"
 brew "vim"
-brew "wget"
+brew "neovim"
 
-brew "sqlite"
-brew "unixodbc"
-
+brew "fish"
+brew "tree"
+brew "curl"
+brew "tmux"
+brew "nnn"
+brew "fpp"
+brew "watchman"
+brew "reattach-to-user-namespace"
 brew "youtube-dl"
+
+cask "java8"
+brew "ant"
 
 cask "caskroom/fonts/font-source-code-pro"
 cask "caskroom/fonts/font-hack-nerd-font"
 
+cask "textmate"
+
+cask "docker"
 cask "virtualbox"
 cask "vagrant"
 
 cask "vlc"
 cask "ccleaner"
 
-cask "textmate"
-
 # Paid
-# cask "ngrok"
 cask "bartender"
 cask "little-snitch"
 cask "micro-snitch"
 
-# cask "dash3"
-
-
 # App Store
 # cask "the-unarchiver"
-
-# App Store
-# cask "screenflick"
 # cask "daisydisk"
