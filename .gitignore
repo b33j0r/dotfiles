@@ -6,3 +6,4 @@ scratch.sh
 temp/
 private/
 vim/vimified/
+*.tmbundle/

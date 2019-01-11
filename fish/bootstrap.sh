@@ -22,6 +22,4 @@ ln -s -f ${BOOTSTRAP_HOME}/keybindings.fish ${HOME}/.config/fish/keybindings.fis
 ln -s -f ${BOOTSTRAP_HOME}/abbreviations.fish ${HOME}/.config/fish/abbreviations.fish
 ln -s -f ${BOOTSTRAP_HOME}/functions/* ${HOME}/.config/fish/functions/
 
-source ${BOOTSTRAP_HOME}/textmate-bundle.sh
-
 popd

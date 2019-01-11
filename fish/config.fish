@@ -4,7 +4,12 @@ set -gx JAVA_HOME /Library/Java/JavaVirtualMachines/$JAVA_JDK_VERSION/Contents/H
 set -gx JAVA_PATH $JAVA_HOME/bin
 
 set -gx PATH $HOME/.bin $HOME/bin /Library/Frameworks/Mono.framework/Versions/Current/bin $HOME/.pyenv/bin $HOME/.pyenv/shims $HOME/.cargo/bin /usr/local/bin /usr/local/sbin $JAVA_PATH /usr/bin /bin /usr/sbin /sbin
+
 set -gx EDITOR nvim
+set -gx VISUAL nvim
+
+# TODO: should I learn improved ex mode?
+# set -gx EDITOR nvim -E
 
 set -gx PYENV_ROOT $HOME/.pyenv
 
