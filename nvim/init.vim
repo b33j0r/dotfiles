@@ -56,6 +56,7 @@ Plug 'racer-rust/vim-racer'
 set hidden
 let g:racer_cmd = $RACER_BIN
 let g:racer_experimental_completer = 1
+Plug 'timonv/vim-cargo'
 
 "
 " YAML
@@ -181,23 +182,6 @@ fun! s:openTerm(args, count, vertical)
   endif
 endf
 
-"
-" vim-cargo fork
-"
-
-if !exists('g:cargo_command')
-  let g:cargo_command = "fish -i -C 'cargo {cmd}'"
-endif
-
-com! -nargs=* CargoBench call cargo#run('bench ' . <q-args>)
-com! -nargs=* CargoBuild call cargo#run('build ' . <q-args>)
-com! -nargs=* CargoCheck call cargo#run('check ' . <q-args>)
-com! -nargs=* CargoClean call cargo#run('clean ' . <q-args>)
-com! -nargs=* CargoDoc call cargo#run('doc ' . <q-args>)
-com! -nargs=* CargoRun call cargo#run('run ' . <q-args>)
-com! -nargs=* CargoTest call cargo#run('test ' . <q-args>)
-com! -nargs=* CargoUpdate call cargo#run('update ' . <q-args>)
-" com! -complete=file -nargs=+ CargoNew call cargo#run('new ' . <q-args>)
 
 " Executes {cmd} with the cwd set to {pwd}, without changing Vim's cwd.
 " If {pwd} is the empty string then it doesn't change the cwd.
@@ -208,17 +192,6 @@ function! s:system(pwd, cmd)
 	endif
 	return system(cmd)
 endfunction
-
-func! cargo#run(cmd)
-	write
-  let s:cargo_command = substitute(g:cargo_command, "{cmd}", a:cmd, 'g')
-	" echo s:cargo_command
-  call s:openTerm(s:cargo_command, 0, 0)
-endf
-
-autocmd BufRead,BufNewFile Cargo.toml,Cargo.lock,*.rs compiler cargo
-autocmd BufRead,BufNewFile Cargo.toml,Cargo.lock,*.rs setlocal makeprg=cargo
-autocmd BufNewFile,BufRead *.rs set filetype=rust
 
 
 "
