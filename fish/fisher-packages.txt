@@ -1,0 +1,8 @@
+# Bash script compatibility
+edc/bass
+
+# Completions
+evanlucas/fish-kubectl-completions
+
+# Node version manager
+jorgebucaran/fish-nvm
