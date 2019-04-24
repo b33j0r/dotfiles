@@ -22,9 +22,9 @@ brew "cgal"
 brew "eigen"
 brew "libtool"
 brew "openssl", link: true
-brew "freetds", args: ["with-unixodbc"]
-brew "icu4c"
-brew "harfbuzz"
+# brew "freetds", args: ["with-unixodbc"]
+# brew "icu4c"
+# brew "harfbuzz"
 brew "jpeg"
 brew "imagemagick"
 brew "libevent"
@@ -37,7 +37,7 @@ brew "opencsg"
 brew "sqlite"
 brew "qt", link: true
 brew "qscintilla2"
-brew "unixodbc"
+# brew "unixodbc"
 brew "wget"
 brew "zlib"
 
@@ -65,8 +65,8 @@ brew "ant"
 cask "caskroom/fonts/font-source-code-pro"
 cask "caskroom/fonts/font-hack-nerd-font"
 
-cask "textmate"
+# cask "textmate"
 
-cask "docker"
-cask "virtualbox"
-cask "vagrant"
+# cask "docker"
+# cask "virtualbox"
+# cask "vagrant"
