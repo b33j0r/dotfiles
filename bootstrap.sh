@@ -15,6 +15,7 @@ source ${DOTFILES_HOME}/python/bootstrap.sh
 source ${DOTFILES_HOME}/nvim/bootstrap.sh
 source ${DOTFILES_HOME}/fish/bootstrap.sh
 source ${DOTFILES_HOME}/tmux/bootstrap.sh
+source ${DOTFILES_HOME}/emacs/bootstrap.sh
 source ${DOTFILES_HOME}/node/bootstrap.sh
 source ${DOTFILES_HOME}/rust/bootstrap.sh
 source ${DOTFILES_HOME}/misc/bootstrap.sh
