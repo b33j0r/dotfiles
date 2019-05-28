@@ -3,7 +3,19 @@ set -gx JAVA_JDK_VERSION (ls "$JAVA_JVMS_HOME" | sort | tail -1)
 set -gx JAVA_HOME /Library/Java/JavaVirtualMachines/$JAVA_JDK_VERSION/Contents/Home
 set -gx JAVA_PATH $JAVA_HOME/bin
 
-set -gx PATH $HOME/.bin $HOME/bin /Library/Frameworks/Mono.framework/Versions/Current/bin $HOME/.pyenv/bin $HOME/.pyenv/shims $HOME/.cargo/bin /usr/local/bin /usr/local/sbin $JAVA_PATH /usr/bin /bin /usr/sbin /sbin
+
+set -gx PATH $HOME/.bin $HOME/bin
+set -gx PATH $PATH $HOME/.local/bin
+set -gx PATH $PATH /usr/local/bin /usr/local/sbin
+
+set -gx PATH $PATH $HOME/.pyenv/bin $HOME/.pyenv/shims
+
+set -gx PATH $PATH $HOME/.cargo/bin
+
+set -gx PATH $PATH $JAVA_PATH
+
+set -gx PATH $PATH /usr/bin /bin /usr/sbin /sbin
+# set -gx PATH $PATH /Library/Frameworks/Mono.framework/Versions/Current/bin
 
 set -gx EDITOR nvim
 set -gx VISUAL nvim
