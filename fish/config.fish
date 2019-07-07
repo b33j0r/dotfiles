@@ -6,11 +6,11 @@ set -gx JAVA_PATH $JAVA_HOME/bin
 set -gx GOPATH (go env GOPATH)
 
 set -gx PATH $HOME/.bin $HOME/bin
-set -gx PATH $PATH $HOME/.local/bin
-set -gx PATH $PATH /usr/local/bin /usr/local/sbin
-
 set -gx PATH $PATH $HOME/.pyenv/bin $HOME/.pyenv/shims
 
+set -gx PATH $PATH $HOME/.local/bin
+set -gx PATH $PATH /usr/local/bin /usr/local/sbin
+ 
 set -gx PATH $PATH $HOME/.cargo/bin
 
 set -gx PATH $PATH $JAVA_PATH
@@ -43,6 +43,11 @@ set -gx RUST_SRC_PATH $SRC_PREFIX/rust/src
 set -gx RACER_BIN $HOME/.cargo/bin/racer
 
 set -gx SHELL /usr/local/bin/fish
+
+# emacs ansi-term support
+if test -n "$EMACS"
+  set -x TERM eterm-color
+end
 
 if status --is-interactive
   source $HOME/.config/fish/interactive.fish
