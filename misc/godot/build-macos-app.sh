@@ -8,6 +8,8 @@ set -e
 
 pushd ${GODOT_SRC}
 
+git pull
+
 scons platform=osx target=release_debug
 cp -r ./misc/dist/osx_tools.app ${GODOT_APP}
 
