@@ -1,3 +1,12 @@
+set -gx LANG "en_US.UTF-8"
+set -gx LC_COLLATE "en_US.UTF-8"
+set -gx LC_CTYPE "UTF-8"
+set -gx LC_MESSAGES "en_US.UTF-8"
+set -gx LC_MONETARY "en_US.UTF-8"
+set -gx LC_NUMERIC "en_US.UTF-8"
+set -gx LC_TIME "en_US.UTF-8"
+set -gx LC_ALL
+
 set -gx JAVA_JVMS_HOME /Library/Java/JavaVirtualMachines
 set -gx JAVA_JDK_VERSION (ls "$JAVA_JVMS_HOME" | sort | tail -1)
 set -gx JAVA_HOME /Library/Java/JavaVirtualMachines/$JAVA_JDK_VERSION/Contents/Home
