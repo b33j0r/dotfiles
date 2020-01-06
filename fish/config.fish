@@ -12,6 +12,8 @@ set -gx JAVA_JDK_VERSION (ls "$JAVA_JVMS_HOME" | sort | tail -1)
 set -gx JAVA_HOME /Library/Java/JavaVirtualMachines/$JAVA_JDK_VERSION/Contents/Home
 set -gx JAVA_PATH $JAVA_HOME/bin
 
+set -gx HOMEBREW_NO_ANALYTICS 1
+
 set -gx GOPATH (go env GOPATH)
 
 set -gx PATH $HOME/.bin $HOME/bin
