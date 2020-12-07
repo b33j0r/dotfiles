@@ -40,4 +40,5 @@ function d { Set-Location "D:\" }
 
 
 # Done
+Set-Location $HOME
 Write-Output "Profile loaded ($PSCommandPath)"
