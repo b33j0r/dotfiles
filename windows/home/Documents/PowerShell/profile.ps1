@@ -35,9 +35,18 @@ function dotfiles { Set-Location "C:\Users\brian\Projects\dotfiles" }
 function p { Set-Location "C:\Users\brian\Projects" }
 function s { Set-Location "C:\src" }
 function b { Set-Location "B:\" }
+function g { Set-Location "B:\Godot" }
+
 function c { Set-Location "C:\" }
 function d { Set-Location "D:\" }
 
+function activate ($name) {
+    if ($PSBoundParameters.Count -ne 1) {
+        Write-Host "usage: activate <venv name>"
+    } else {
+        & "C:\Users\brian\.venv\$name\Scripts\activate.ps1"
+    }
+}
 
 # Done
 Set-Location $HOME
