@@ -49,5 +49,5 @@ function activate ($name) {
 }
 
 # Done
-Set-Location $HOME
+#Set-Location $HOME
 Write-Output "Profile loaded ($PSCommandPath)"
