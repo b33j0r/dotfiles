@@ -1,4 +1,6 @@
+
 $profile_src = "$PSScriptRoot/home/Documents/PowerShell/profile.ps1"
+Write-Output "Profile path: $profile_src"
 
 $profile_dest_ps = "$HOME/Documents/PowerShell/profile.ps1"
 $profile_dest_ps2 = "$HOME/Documents/PowerShell/Microsoft.PowerShell_profile.ps1"

@@ -7,3 +7,4 @@ temp/
 private/
 vim/vimified/
 *.tmbundle/
+.vscode/
